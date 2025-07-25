@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/authpage.css">
+    <script src="/static/otp.js" defer></script>
+    <title id="tab-title">Sign In</title>
+</head>
+<body>
+    <main>
+        <div id="sign-in-details-container" class="main-div">
+            <h1 id="sign-in-title" class="primary-title">Sign In</h1>
+            <div class="phone-num">
+                <select id="country-code" name="country-code" class="phone-num-tags">   
+                    <option value="91" data-emoji="🇮🇳">🇮🇳 (+91)</option>
+                    <option value="1" data-emoji="🇺🇸">🇺🇸 (+1)</option>
+                    <option value="44" data-emoji="🇬🇧">🇬🇧 (+44)</option>
+                    <option value="1" data-emoji="🇨🇦">🇨🇦 (+1)</option>
+                    <option value="61" data-emoji="🇦🇺">🇦🇺 (+61)</option>
+                    <option value="49" data-emoji="🇩🇪">🇩🇪 (+49)</option>
+                    <option value="81" data-emoji="🇯🇵">🇯🇵 (+81)</option>
+                    <option value="86" data-emoji="🇨🇳">🇨🇳 (+86)</option>
+                    <option value="33" data-emoji="🇫🇷">🇫🇷 (+33)</option>
+                    <option value="55" data-emoji="🇧🇷">🇧🇷 (+55)</option>
+                    <option value="7" data-emoji="🇷🇺">🇷🇺 (+7)</option>
+                    <option value="27" data-emoji="🇿🇦">🇿🇦 (+27)</option>
+                    <option value="82" data-emoji="🇰🇷">🇰🇷 (+82)</option>
+                    <option value="39" data-emoji="🇮🇹">🇮🇹 (+39)</option>
+                    <option value="34" data-emoji="🇪🇸">🇪🇸 (+34)</option>
+                    <option value="971" data-emoji="🇦🇪">🇦🇪 (+971)</option>
+                    <option value="65" data-emoji="🇸🇬">🇸🇬 (+65)</option>
+                    <option value="41" data-emoji="🇨🇭">🇨🇭 (+41)</option>
+                    <option value="52" data-emoji="🇲🇽">🇲🇽 (+52)</option>
+                    <option value="64" data-emoji="🇳🇿">🇳🇿 (+64)</option>
+                </select>
+                <input id="phone-num-text-box" class="primary-text-box"  type="text" minlength="10" maxlength="10" placeholder="Enter phone number or email ">
+            </div>
+            <p class="terms-and-conditions">
+                By proceeding you confirm that you are above 18 years of age and agree to the Terms & Conditions.
+            </p>
+            <div id="otp-div" class="otp-container">
+                <div id="main-otp-container" class="main-otp-class">
+                    <input type="text" minlength="1" maxlength="1" id="first-digit-text-box" class="otp-text-box">
+                    <input type="text" minlength="1" maxlength="1" id="second-digit-text-box" class="otp-text-box">
+                    <input type="text" minlength="1" maxlength="1" id="third-digit-text-box" class="otp-text-box">
+                    <input type="text" minlength="1" maxlength="1" id="fourth-digit-text-box" class="otp-text-box">
+                </div>
+                <p id="incorrect-otp" class="otp-entered-status">The OTP entered was incorrect.</p>
+                <button id="get-otp-button" class="get-otp is-hidden">Get OTP</button>
+                <button id="sign-in-button" class="enter-homepage is-hidden">Sign In</button>
+            </div>
+            
+            <a href="" id="sign-up-link" class="primary-link">Sign Up</a>
+        </div>
+        <!-- <div id="sign-up-details-container" class="main-div">
+            
+        </div> -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight",sans-serif;
+}
+
+body{
+    background-color: rgb(18, 18, 18);
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    padding: 15px;
+    min-width: 50vh;
+    min-height: 70vh;
+    border: solid;
+    border-width: 0px;
+    border-radius: 30px;
+    width: 26%;
+    
+}
+
+.primary-title{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.phone-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 10px;
+
+}
+
+.phone-num-tags{
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(43, 43, 43);
+    background-color: rgb(35, 35, 35);
+    color: white;
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);    
+}
+
+.primary-text-box{
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+    color: white;
+    border: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: rgb(43, 43, 43);
+    background-color: rgb(35, 35, 35);
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.primary-text-box:hover{
+    border-color: rgb(51, 51, 51);
+    transition: 0.3s;
+}
+.phone-num-tags:hover{
+    border-color: rgb(51, 51, 51);
+    transition: 0.3s;
+}
+.primary-text-box::placeholder{
+    color: white;
+}
+
+.terms-and-conditions{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    
+}
+
+.otp-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid;
+    border-width: 5px; */
+    gap: 20px;
+}
+
+.main-otp-class{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    min-width: 50vh;
+    min-height: 10vh;
+    border: solid;
+    border-width: 0px;
+    margin-bottom: 70px;
+}
+
+.otp-text-box{
+    width: 50px;
+    height: 70px;
+    padding-left: 9px;
+    color: white;
+    border: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(43, 43, 43);
+    background-color: rgb(35, 35, 35);
+    font-size: 40px;
+    font-family: "Inter Tight",sans-serif;
+}
+
+.otp-entered-status{
+    font-size: 15px;
+    color: white;
+}
+
+
+.get-otp{
+    position: absolute;
+    bottom: 0px;
+    width: 220px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    padding: 10px 20px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(38, 38, 38);
+    transition: 0.3s;
+    font-size: 20px;
+    opacity: 1;
+    visibility: visible;
+    transition: background-color 0.3s, border-color 0.3s, opacity 0.3s, visibility 0.3s;
+    
+}
+
+
+.get-otp:hover{
+    border-color: rgb(51, 51, 51);
+}
+.get-otp:focus{
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
+}
+
+.enter-homepage{
+    width: 220px;
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    padding: 10px 20px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(38, 38, 38);
+    transition: 0.3s;
+    font-size: 20px;
+    opacity: 1;
+    visibility: visible;
+    transition: background-color 0.3s, border-color 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.enter-homepage:hover{
+    border-color: rgb(51, 51, 51);
+}
+.enter-homepage:focus{
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
+}
+
+
+
+.primary-link{
+    color: rgb(52, 52, 52);
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.primary-link:hover{
+    color: rgb(62, 62, 62); 
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.drop-down-slide-out{
+    opacity: 0;
+    pointer-events: none;
+
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
